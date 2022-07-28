@@ -9,8 +9,17 @@
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- slick -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
+
     <!-- google fonts || fira sans -->
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
 
     <!-- style css -->
     <link rel="stylesheet" href="css/style.css">
@@ -20,13 +29,744 @@
 </head>
 
 <body>
-    <h1>Hello, world!</h1>
+
+
+    <!-- topbar -->
+    <section class="topbar py-3">
+        <div class="container">
+            <div class="text-center position-relative">
+                <button class="btn backBtn">
+                    <i class="fa fa-arrow-left"></i>
+                </button>
+                <img src="img/logo.png" class="img-fluid" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- topbar -->
+
+    <!-- hero -->
+    <section class="hero py-5">
+        <div class="container">
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <h1 class="fs-48 fw-semibold">Pablo Picasso</h1>
+                    <h3 class="fs-20 fw-semibold my-3">1881 , Malaga - 1973 , Mougins</h3>
+                    <p>
+                        Pittore e scultore, Pablo Picasso è stato uno dei protagonisti assoluti dell'arte del Novecento.
+                        "A dodici anni dipingevo come Raffaello, ci ho messo tutta una vita per imparare a dipingere
+                        come un bambino”
+                        <br><br>
+                        Pablo Picasso
+                    </p>
+                    <div class="d-flex">
+                        <button class="btn btn-outline-info me-3 border-info border text-white">
+                            Pablo Picasso
+                        </button>
+                        <button class="btn btn-outline-info me-3 border-info border text-white">
+                            Arte Moderna
+                        </button>
+                        <button class="btn btn-outline-info me-3 border-info border text-white">
+                            Post Impressionismo
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-6 text-md-end text-center">
+                    <img src="img/picasso.png" class="img-fluid" alt="">
+
+                    <div class="d-flex justify-content-end mt-4">
+                        <button class="btn text-white me-4">
+                            <i class="far fa-heart me-2"></i> Segui Artista
+                        </button>
+                        <button class="btn text-white pe-0">
+                            <i class="fa fa-share-alt me-2"></i> Condividi
+                        </button>
+                    </div>
+                    <div class="social d-inline-flex justify-content-end px-3 py-2 bg-dark">
+                        <a href="#" class="text-white text-decoration-none d-inline-block">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="#" class="text-white text-decoration-none ms-3 d-inline-block">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-white text-decoration-none ms-3 d-inline-block">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- hero -->
+
+    <!-- gap -->
+    <section class="gap"></section>
+    <!-- gap -->
+
+
+    <!-- slider-1 -->
+    <section class="slider-1">
+        <div class="container-fluid p-0">
+            <div class="row g-3">
+                <div class="col-md-2 offset-md-1 py-3">
+                    <h2 class="fw-semibold fs-34">Mostre</h2>
+                    <h2 class="fw-normal fs-34">sull’artista</h2>
+                    <p>[testo che descrive che ci sono molte mostre in giro per il mondo su Piero della Francesca]</p>
+                    <button class="btn btn-blue rounded-pill px-4">Mostra tutto</button>
+                </div>
+                <div class="col-md-9 bg-custom-3 p-4">
+                    <div class="d-flex flex-wrap">
+                        <button class="btn btn-outline-info me-3 border-info border text-white me-1 active">
+                            Tutte
+                        </button>
+                        <button class="btn btn-outline-info me-3 border-info border text-white me-1">
+                            Milano
+                        </button>
+                        <button class="btn btn-outline-info me-3 border-info border text-white me-1">
+                            Roma
+                        </button>
+                        <button class="btn btn-outline-info me-3 border-info border text-white me-1">
+                            Amsterdam
+                        </button>
+                        <button class="btn btn-outline-info me-3 border-info border text-white me-1">
+                            Berlino
+                        </button>
+                        <button class="btn btn-outline-info me-3 border-info border text-white me-1">
+                            Barcellona
+                        </button>
+                        <button class="btn btn-outline-info me-3 border-info border text-white me-1">
+                            Parigi
+                        </button>
+                    </div>
+
+                    <div class="slider mt-4">
+                        <div class="slide p-3">
+                            <div class="card border-0 position-relative">
+                                <img src="img/partner.png" class="img-fluid position-absolute top-0 left-0" alt="">
+                                <img src="img/horse.png" class="img-fluid card-img-top" alt="">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-start">
+                                        <p class="fw-semibold w-50">
+                                            Madre - Museo d’arte contemporanea Donnaregina
+                                        </p>
+                                        <button class="btn btn-green rounded-pill fs-12">
+                                            In programma
+                                        </button>
+                                    </div>
+                                    <p class="fs-18 ls-2">dal 12 luglio 2021 al 20 febbraio 2022</p>
+                                    <h2 class="fs-24 fw-semibold">#ilMadrepertutti</h2>
+                                    <p class="fs-14">
+                                        Un’occasione eccezionale per visitare il museo al prezzo ridotto di soli 4 euro.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide p-3">
+                            <div class="card border-0 position-relative">
+                                <img src="img/partner.png" class="img-fluid position-absolute top-0 left-0" alt="">
+                                <img src="img/horse.png" class="img-fluid card-img-top" alt="">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-start">
+                                        <p class="fw-semibold w-50">
+                                            Madre - Museo d’arte contemporanea Donnaregina
+                                        </p>
+                                        <button class="btn btn-green rounded-pill fs-12">
+                                            In programma
+                                        </button>
+                                    </div>
+                                    <p class="fs-18 ls-2">dal 12 luglio 2021 al 20 febbraio 2022</p>
+                                    <h2 class="fs-24 fw-semibold">#ilMadrepertutti</h2>
+                                    <p class="fs-14">
+                                        Un’occasione eccezionale per visitare il museo al prezzo ridotto di soli 4 euro.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide p-3">
+                            <div class="card border-0 position-relative">
+                                <img src="img/partner.png" class="img-fluid position-absolute top-0 left-0" alt="">
+                                <img src="img/horse.png" class="img-fluid card-img-top" alt="">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-start">
+                                        <p class="fw-semibold w-50">
+                                            Madre - Museo d’arte contemporanea Donnaregina
+                                        </p>
+                                        <button class="btn btn-green rounded-pill fs-12">
+                                            In programma
+                                        </button>
+                                    </div>
+                                    <p class="fs-18 ls-2">dal 12 luglio 2021 al 20 febbraio 2022</p>
+                                    <h2 class="fs-24 fw-semibold">#ilMadrepertutti</h2>
+                                    <p class="fs-14">
+                                        Un’occasione eccezionale per visitare il museo al prezzo ridotto di soli 4 euro.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide p-3">
+                            <div class="card border-0 position-relative">
+                                <img src="img/partner.png" class="img-fluid position-absolute top-0 left-0" alt="">
+                                <img src="img/horse.png" class="img-fluid card-img-top" alt="">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-start">
+                                        <p class="fw-semibold w-50">
+                                            Madre - Museo d’arte contemporanea Donnaregina
+                                        </p>
+                                        <button class="btn btn-green rounded-pill fs-12">
+                                            In programma
+                                        </button>
+                                    </div>
+                                    <p class="fs-18 ls-2">dal 12 luglio 2021 al 20 febbraio 2022</p>
+                                    <h2 class="fs-24 fw-semibold">#ilMadrepertutti</h2>
+                                    <p class="fs-14">
+                                        Un’occasione eccezionale per visitare il museo al prezzo ridotto di soli 4 euro.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- slider-1 -->
+
+    <!-- gap -->
+    <section class="gap"></section>
+    <!-- gap -->
+
+    <!-- slider-1 -->
+    <section class="slider-2">
+        <div class="container-fluid p-0">
+            <div class="row g-3">
+                <div class="col-md-2 offset-md-1 py-3">
+                    <h2 class="fw-semibold fs-34">Eventi</h2>
+                    <h2 class="fw-normal fs-34">sull’artista</h2>
+                    <p>[testo che descrive che ci sono molte mostre in giro per il mondo su Piero della Francesca]</p>
+                    <button class="btn btn-blue rounded-pill px-4">Mostra tutto</button>
+                </div>
+                <div class="col-md-9 bg-custom-3 p-4">
+                    <div class="d-flex flex-wrap">
+                        <button class="btn btn-outline-info me-3 border-info border text-white me-1 active">
+                            Tutte
+                        </button>
+                        <button class="btn btn-outline-info me-3 border-info border text-white me-1">
+                            Milano
+                        </button>
+                        <button class="btn btn-outline-info me-3 border-info border text-white me-1">
+                            Roma
+                        </button>
+                        <button class="btn btn-outline-info me-3 border-info border text-white me-1">
+                            Amsterdam
+                        </button>
+                        <button class="btn btn-outline-info me-3 border-info border text-white me-1">
+                            Berlino
+                        </button>
+                        <button class="btn btn-outline-info me-3 border-info border text-white me-1">
+                            Barcellona
+                        </button>
+                        <button class="btn btn-outline-info me-3 border-info border text-white me-1">
+                            Parigi
+                        </button>
+                    </div>
+
+                    <div class="slider mt-4">
+                        <div class="slide p-3">
+                            <div class="card border-0 position-relative">
+                                <img src="img/partner.png" class="img-fluid position-absolute top-0 left-0" alt="">
+                                <img src="img/horse.png" class="img-fluid card-img-top" alt="">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-start">
+                                        <p class="fw-semibold w-50">
+                                            Madre - Museo d’arte contemporanea Donnaregina
+                                        </p>
+                                        <button class="btn btn-green rounded-pill fs-12">
+                                            In programma
+                                        </button>
+                                    </div>
+                                    <p class="fs-18 ls-2">dal 12 luglio 2021 al 20 febbraio 2022</p>
+                                    <h2 class="fs-24 fw-semibold">#ilMadrepertutti</h2>
+                                    <p class="fs-14">
+                                        Un’occasione eccezionale per visitare il museo al prezzo ridotto di soli 4 euro.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide p-3">
+                            <div class="card border-0 position-relative">
+                                <img src="img/partner.png" class="img-fluid position-absolute top-0 left-0" alt="">
+                                <img src="img/horse.png" class="img-fluid card-img-top" alt="">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-start">
+                                        <p class="fw-semibold w-50">
+                                            Madre - Museo d’arte contemporanea Donnaregina
+                                        </p>
+                                        <button class="btn btn-green rounded-pill fs-12">
+                                            In programma
+                                        </button>
+                                    </div>
+                                    <p class="fs-18 ls-2">dal 12 luglio 2021 al 20 febbraio 2022</p>
+                                    <h2 class="fs-24 fw-semibold">#ilMadrepertutti</h2>
+                                    <p class="fs-14">
+                                        Un’occasione eccezionale per visitare il museo al prezzo ridotto di soli 4 euro.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide p-3">
+                            <div class="card border-0 position-relative">
+                                <img src="img/partner.png" class="img-fluid position-absolute top-0 left-0" alt="">
+                                <img src="img/horse.png" class="img-fluid card-img-top" alt="">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-start">
+                                        <p class="fw-semibold w-50">
+                                            Madre - Museo d’arte contemporanea Donnaregina
+                                        </p>
+                                        <button class="btn btn-green rounded-pill fs-12">
+                                            In programma
+                                        </button>
+                                    </div>
+                                    <p class="fs-18 ls-2">dal 12 luglio 2021 al 20 febbraio 2022</p>
+                                    <h2 class="fs-24 fw-semibold">#ilMadrepertutti</h2>
+                                    <p class="fs-14">
+                                        Un’occasione eccezionale per visitare il museo al prezzo ridotto di soli 4 euro.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide p-3">
+                            <div class="card border-0 position-relative">
+                                <img src="img/partner.png" class="img-fluid position-absolute top-0 left-0" alt="">
+                                <img src="img/horse.png" class="img-fluid card-img-top" alt="">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-start">
+                                        <p class="fw-semibold w-50">
+                                            Madre - Museo d’arte contemporanea Donnaregina
+                                        </p>
+                                        <button class="btn btn-green rounded-pill fs-12">
+                                            In programma
+                                        </button>
+                                    </div>
+                                    <p class="fs-18 ls-2">dal 12 luglio 2021 al 20 febbraio 2022</p>
+                                    <h2 class="fs-24 fw-semibold">#ilMadrepertutti</h2>
+                                    <p class="fs-14">
+                                        Un’occasione eccezionale per visitare il museo al prezzo ridotto di soli 4 euro.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- slider-1 -->
+
+    <!-- gap -->
+    <section class="gap"></section>
+    <!-- gap -->
+
+    <!-- masonry -->
+    <section class="gallery py-3">
+        <div class="container">
+            <h2 class="fw-semibold fs-34">Opere dell’artista</h2>
+            <div class="d-flex my-3">
+                <button class="btn btn-outline-info me-3 border-info border text-white active">
+                    Tutte
+                </button>
+                <button class="btn btn-outline-info me-3 border-info border text-white">
+                    Periodo blu
+                </button>
+                <button class="btn btn-outline-info me-3 border-info border text-white">
+                    Cubismo
+                </button>
+                <button class="btn btn-outline-info me-3 border-info border text-white">
+                    Periodo di cristallo
+                </button>
+            </div>
+            <div class="grid">
+                <div class="grid-item grid-sizer p-3">
+                    <img src="img/1.png" class="img-fluid card-img-top" alt="">
+                </div>
+                <div class="grid-item grid-sizer p-3">
+                    <img src="img/2.png" class="img-fluid card-img-top" alt="">
+                </div>
+                <div class="grid-item grid-sizer p-3">
+                    <img src="img/3.png" class="img-fluid card-img-top" alt="">
+                </div>
+                <div class="grid-item grid-sizer p-3">
+                    <img src="img/4.png" class="img-fluid card-img-top" alt="">
+                </div>
+                <div class="grid-item grid-sizer p-3 pb-0">
+                    <img src="img/5.png" class="img-fluid card-img-top" alt="">
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <button class="btn btn-outline-info rounded-pill border border-info fs-16">vedi di più</button>
+            </div>
+        </div>
+    </section>
+    <!-- masonry -->
+
+
+
+    <!-- gap -->
+    <section class="gap"></section>
+    <!-- gap -->
+
+    <!-- slider-1 -->
+    <section class="slider-3">
+        <div class="container-fluid p-0">
+            <div class="row g-3">
+                <div class="col-md-2 offset-md-1 py-3">
+                    <h2 class="fw-semibold fs-34">Artista</h2>
+                    <h2 class="fw-normal fs-34">esposto in questi musei</h2>
+                    <p>[testo che descrive che ci sono molti musei in giro per il mondo che espongono l’artista]</p>
+                    <button class="btn btn-blue rounded-pill px-4">Mostra tutto</button>
+                </div>
+                <div class="col-md-9 bg-custom-3 p-4">
+                    <div class="d-flex flex-wrap">
+                        <button class="btn btn-outline-info me-3 border-info border text-white me-1 active">
+                            Tutte
+                        </button>
+                        <button class="btn btn-outline-info me-3 border-info border text-white me-1">
+                            Milano
+                        </button>
+                        <button class="btn btn-outline-info me-3 border-info border text-white me-1">
+                            Roma
+                        </button>
+                        <button class="btn btn-outline-info me-3 border-info border text-white me-1">
+                            Amsterdam
+                        </button>
+                        <button class="btn btn-outline-info me-3 border-info border text-white me-1">
+                            Berlino
+                        </button>
+                        <button class="btn btn-outline-info me-3 border-info border text-white me-1">
+                            Barcellona
+                        </button>
+                        <button class="btn btn-outline-info me-3 border-info border text-white me-1">
+                            Parigi
+                        </button>
+                    </div>
+
+                    <div class="slider mt-4">
+                        <div class="slide p-3">
+                            <div class="card border-0 position-relative">
+                                <img src="img/partner.png" class="img-fluid position-absolute top-0 left-0" alt="">
+                                <img src="img/blog.png" class="img-fluid card-img-top" alt="">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-start align-items-start mb-3">
+                                        <img src="img/dp.png" class="rounded-circle dp" alt="">
+                                        <p class="mb-0 ms-2">Madre - Museo d’arte contemporanea Donnaregina</p>
+                                    </div>
+                                    <p class="fs-10 ls-2">aperto adesso: dalle 13:00 alle 17:00</p>
+                                    <button class="btn fs-14 text-white p-0">
+                                        <i class="fa fa-paper-plane me-2"></i> Via Settembrini, 79, 80139 Napoli NA
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide p-3">
+                            <div class="card border-0 position-relative">
+                                <img src="img/partner.png" class="img-fluid position-absolute top-0 left-0" alt="">
+                                <img src="img/blog.png" class="img-fluid card-img-top" alt="">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-start align-items-start mb-3">
+                                        <img src="img/dp.png" class="rounded-circle dp" alt="">
+                                        <p class="mb-0 ms-2">Madre - Museo d’arte contemporanea Donnaregina</p>
+                                    </div>
+                                    <p class="fs-10 ls-2">aperto adesso: dalle 13:00 alle 17:00</p>
+                                    <button class="btn fs-14 text-white p-0">
+                                        <i class="fa fa-paper-plane me-2"></i> Via Settembrini, 79, 80139 Napoli NA
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide p-3">
+                            <div class="card border-0 position-relative">
+                                <img src="img/partner.png" class="img-fluid position-absolute top-0 left-0" alt="">
+                                <img src="img/blog.png" class="img-fluid card-img-top" alt="">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-start align-items-start mb-3">
+                                        <img src="img/dp.png" class="rounded-circle dp" alt="">
+                                        <p class="mb-0 ms-2">Madre - Museo d’arte contemporanea Donnaregina</p>
+                                    </div>
+                                    <p class="fs-10 ls-2">aperto adesso: dalle 13:00 alle 17:00</p>
+                                    <button class="btn fs-14 text-white p-0">
+                                        <i class="fa fa-paper-plane me-2"></i> Via Settembrini, 79, 80139 Napoli NA
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide p-3">
+                            <div class="card border-0 position-relative">
+                                <img src="img/partner.png" class="img-fluid position-absolute top-0 left-0" alt="">
+                                <img src="img/blog.png" class="img-fluid card-img-top" alt="">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-start align-items-start mb-3">
+                                        <img src="img/dp.png" class="rounded-circle dp" alt="">
+                                        <p class="mb-0 ms-2">Madre - Museo d’arte contemporanea Donnaregina</p>
+                                    </div>
+                                    <p class="fs-10 ls-2">aperto adesso: dalle 13:00 alle 17:00</p>
+                                    <button class="btn fs-14 text-white p-0">
+                                        <i class="fa fa-paper-plane me-2"></i> Via Settembrini, 79, 80139 Napoli NA
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- slider-1 -->
+
+
+    <!-- picasso -->
+    <section class="picasso py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 offset-md-1 m-auto">
+                    <h2 class="fw-semibold fs-48">Ti piace Pablo Picasso?</h2>
+                    <p class="fs-24">
+                        Segui l’artista per tenerti informato su tutte le novità, le mostre e gli eventi
+                    </p>
+                    <button class="btn btn-outline-info fs-16 px-4 text-white border rounded-pill border-info">
+                        <i class="far fa-heart me-2"></i> segui l’artista
+                    </button>
+                </div>
+                <div class="col-md-4 text-end">
+                    <img src="img/picasso-main.png" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- picasso -->
+
+    <!-- slider-1 -->
+    <section class="slider-4">
+        <div class="container-fluid p-0">
+            <div class="row g-3">
+                <div class="col-md-4 offset-md-1 bg-info-1">
+                    <div class="p-4">
+                        <h2 class="fs-40">
+                            <b>Itinerari</b>
+                            <span class="fw-normal">consigliati</span>
+                        </h2>
+
+                        <div class="mapslider mt-4">
+                            <div class="slide">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29424.032059054432!2d90.30358939999999!3d22.802315399999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755343000000001%3A0xb12083847ebf8b92!2sBarishal%20Airport!5e0!3m2!1sen!2sbd!4v1659046426718!5m2!1sen!2sbd"
+                                    style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                            <div class="slide">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29424.032059054432!2d90.30358939999999!3d22.802315399999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755343000000001%3A0xb12083847ebf8b92!2sBarishal%20Airport!5e0!3m2!1sen!2sbd!4v1659046426718!5m2!1sen!2sbd"
+                                    style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                            <div class="slide">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29424.032059054432!2d90.30358939999999!3d22.802315399999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755343000000001%3A0xb12083847ebf8b92!2sBarishal%20Airport!5e0!3m2!1sen!2sbd!4v1659046426718!5m2!1sen!2sbd"
+                                    style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                            <div class="slide">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29424.032059054432!2d90.30358939999999!3d22.802315399999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755343000000001%3A0xb12083847ebf8b92!2sBarishal%20Airport!5e0!3m2!1sen!2sbd!4v1659046426718!5m2!1sen!2sbd"
+                                    style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-7">
+                    <div class="row g-3">
+                        <div class="col-md-5 ps-5 py-3">
+                            <h2 class="fw-semibold fs-34">Artisti</h2>
+                            <h2 class="fw-normal fs-34">simili</h2>
+                        </div>
+                        <div class="col-md-7 bg-custom-3 p-4">
+                            <div class="slider-1 mt-4">
+                                <div class="slide p-3">
+                                    <div class="card border-0 position-relative">
+
+                                        <img src="img/vangogh.png" class="img-fluid card-img-top" alt="">
+                                        <div class="card-body">
+                                            <p class="fs-10 ls-2">Malaga, 25 ottobre 1881 – Mougins, 8 aprile 1973</p>
+                                            <h3 class="fs-24 fw-semibold">Vincent Van Gogh</h3>
+                                            <p>
+                                                Snodo cruciale tra la tradizione ottocentesca e l'arte contemporanea,
+                                                Picasso è stato un artista innovativo e poliedrico, che ha lasciato un
+                                                segno indelebile nella storia dell'arte per esser stato il fondatore del
+                                                cubismo.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide p-3">
+                                    <div class="card border-0 position-relative">
+
+                                        <img src="img/vangogh.png" class="img-fluid card-img-top" alt="">
+                                        <div class="card-body">
+                                            <p class="fs-10 ls-2">Malaga, 25 ottobre 1881 – Mougins, 8 aprile 1973</p>
+                                            <h3 class="fs-24 fw-semibold">Vincent Van Gogh</h3>
+                                            <p>
+                                                Snodo cruciale tra la tradizione ottocentesca e l'arte contemporanea,
+                                                Picasso è stato un artista innovativo e poliedrico, che ha lasciato un
+                                                segno indelebile nella storia dell'arte per esser stato il fondatore del
+                                                cubismo.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide p-3">
+                                    <div class="card border-0 position-relative">
+
+                                        <img src="img/vangogh.png" class="img-fluid card-img-top" alt="">
+                                        <div class="card-body">
+                                            <p class="fs-10 ls-2">Malaga, 25 ottobre 1881 – Mougins, 8 aprile 1973</p>
+                                            <h3 class="fs-24 fw-semibold">Vincent Van Gogh</h3>
+                                            <p>
+                                                Snodo cruciale tra la tradizione ottocentesca e l'arte contemporanea,
+                                                Picasso è stato un artista innovativo e poliedrico, che ha lasciato un
+                                                segno indelebile nella storia dell'arte per esser stato il fondatore del
+                                                cubismo.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide p-3">
+                                    <div class="card border-0 position-relative">
+
+                                        <img src="img/vangogh.png" class="img-fluid card-img-top" alt="">
+                                        <div class="card-body">
+                                            <p class="fs-10 ls-2">Malaga, 25 ottobre 1881 – Mougins, 8 aprile 1973</p>
+                                            <h3 class="fs-24 fw-semibold">Vincent Van Gogh</h3>
+                                            <p>
+                                                Snodo cruciale tra la tradizione ottocentesca e l'arte contemporanea,
+                                                Picasso è stato un artista innovativo e poliedrico, che ha lasciato un
+                                                segno indelebile nella storia dell'arte per esser stato il fondatore del
+                                                cubismo.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- slider-1 -->
+
+    <!-- footer -->
+    <section class="footer py-4">
+        <div class="container">
+            <div class="row g-3">
+                <div class="col-md-7">
+                    <a href="" class="text-decoration-none">
+                        <img src="img/footer-logo.png" class="img-fluid" alt="">
+                    </a>
+                    <p class="fs-14 fw-semibold mb-0 mt-2">
+                        Restart S.r.l.
+                    </p>
+                    <p class="fs-12">Tutti i diritti riservati © 2021</p>
+
+                    <select name="" class="form-select mt-5 border-0 bg-transparent text-white d-inline" id="">
+                        <option value="">IT</option>
+                        <option value="">EN</option>
+                        <option value="">FR</option>
+                    </select>
+                </div>
+                <div class="col-md-5">
+                    <p>
+                        Rimani aggiornato sulle ultime mostre ed eventi.
+                        Iscriviti alla nostra newsletter
+                    </p>
+                    <form action="">
+                        <div class="input-group">
+                            <input type="text" class="form-control rounded-pill me-3"
+                                placeholder="Inserisci la tua mail" name="" id="">
+                            <button class="btn btn-info rounded-pill">Iscriviti</button>
+                        </div>
+                        <div class="mt-3 d-flex">
+                            <input type="checkbox" name="" id="chk">
+                            <label for="chk" class="ms-2">
+                                Accetta i Termini e condizioni di Artsupp e dichiari di aver letto la nostra informativa
+                                sulla Privacy
+                            </label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-menu mt-3">
+                <div class="row g-3">
+                    <div class="col-md-7">
+                        <ul class="d-flex justify-content-between align-items-center list-unstyled m-0 p-0">
+                            <li>
+                                <a href="" class="text-info text-decoration-none">
+                                    Contattaci
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="text-info text-decoration-none">
+                                    FAQ
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="text-info text-decoration-none">
+                                    Termini e condizioni
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="text-info text-decoration-none">
+                                    Privacy
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="text-info text-decoration-none">
+                                    Cookie Policy
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-5 text-end">
+                        <div class="d-flex justify-content-end align-items-center">
+                            <a href="" class="socialIcon text-decoration-none d-inline-block">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="" class="socialIcon text-decoration-none d-inline-block">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="" class="socialIcon text-decoration-none d-inline-block">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- slick -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <!-- masonry -->
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 
     <!-- main js -->
     <script src="js/main.js"></script>
