@@ -88,3 +88,9 @@ $('.grid').masonry({
     // options
     itemSelector: '.grid-item',
 });
+
+$('.menutoggler').click(function (e) {
+    e.preventDefault()
+    $(this).toggleClass('active')
+    $('.sideMenu').toggleClass('active')
+})
