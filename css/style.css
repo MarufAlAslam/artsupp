@@ -374,6 +374,17 @@ iframe {
     display: none;
 }
 
+.gallery-grid {
+    width: 100% !important;
+}
+
+.gallery-grid-2,
+.gallery-grid-3,
+.gallery-grid-4,
+.gallery-grid-5 {
+    display: none;
+}
+
 
 @media screen and (max-width: 767px) {
     .sideNav {
@@ -450,6 +461,11 @@ iframe {
         flex-wrap: nowrap !important;
         width: 120%;
         overflow-x: scroll !important;
+    }
+
+
+    img {
+        transition: 0.6s;
     }
 
     .picasso.py-5 .col-md-4 {

@@ -94,3 +94,18 @@ $('.menutoggler').click(function (e) {
     $(this).toggleClass('active')
     $('.sideMenu').toggleClass('active')
 })
+
+var clk = 1
+$('.imgLoader').click(function () {
+    if (clk == 5) {
+        clk = 0
+    }
+    clk++
+    $('.img1').attr("src", "img/" + clk + "1.jpg")
+    $('.img2').attr("src", "img/" + clk + "2.jpg")
+    $('.img3').attr("src", "img/" + clk + "3.jpg")
+    $('.img4').attr("src", "img/" + clk + "4.jpg")
+    $('.img5').attr("src", "img/" + clk + "5.jpg")
+
+    console.log(clk)
+})
